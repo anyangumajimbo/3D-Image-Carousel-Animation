@@ -1,0 +1,20 @@
+/* ...existing code... */
+
+@media (max-width: 600px) {
+    img {
+        width: 50%;
+        height: 50%;
+    }
+    /* Adjust related distances if needed */
+    .image-container {
+        margin: 10px; /* Example adjustment */
+    }
+    .carousel {
+        gap: 10px; /* Example adjustment to reduce distance between images */
+    }
+    .container span {
+        --distance: calc(var(--distance) / 2); /* Reduce distance between images by half */
+    }
+}
+
+/* ...existing code... */

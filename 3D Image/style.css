@@ -72,3 +72,24 @@ img {
     }
 
 }
+
+@media (max-width: 600px) {
+    img {
+        width: 50%;
+        height: 50%;
+    }
+    /* Adjust related distances if needed */
+    .image-container {
+        margin: 10px; /* Example adjustment */
+    }
+    .container span {
+        transform: rotateY(calc(var(--i) * 51.43deg)) translateZ(120px); /* Reduce distance between images by half */
+        -webkit-box-reflect: below 2.5px linear-gradient(transparent, transparent, rgba(3,3,3,0.2)); /* Ensure reflection is maintained */
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px; /* Move slightly to the left */
+    }
+}
